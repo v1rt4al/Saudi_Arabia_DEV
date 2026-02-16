@@ -248,7 +248,7 @@ focus = {
 	x = 10 y = 2
 	cost = 10
 	available = { 
-	has_completed_focus = SAU_new_army
+	has_completed_focus = SAU_new_strong
    }
 
     prerequisite = { focus = SAU_new_politic}
@@ -727,7 +727,7 @@ focus = {
 	id = SAU_new_dockyard
 	icon = GFX_goal_generic_construct_naval_dockyard
 	x = 21 y = 2
-	cost = 5
+	cost = 3
 	available = { 
     }
     prerequisite = { focus = SAU_new_army}
@@ -741,7 +741,7 @@ focus = {
 	id = SAU_new_dockyard1
 	icon = GFX_focus_generic_navy_battleship2
 	x = 22 y = 3
-	cost = 5
+	cost = 3
 	available = { 
     }
     prerequisite = { focus = SAU_new_dockyard}
@@ -762,7 +762,7 @@ focus = {
 	id = SAU_new_dockyard2
 	icon = GFX_goal_generic_navy_submarine
 	x = 20 y = 3
-	cost = 5
+	cost = 3
 	available = { 
     }
     prerequisite = { focus = SAU_new_dockyard}
@@ -782,7 +782,7 @@ focus = {
 	id = SAU_new_dockyard3
 	icon = GFX_goal_generic_navy_doctrines_tactics
 	x = 21 y = 5
-	cost = 10
+	cost = 3
 	available = { 
     }
     prerequisite = { focus = SAU_new_dockyard5 focus = SAU_new_dockyard4}
@@ -796,7 +796,6 @@ focus = {
 				uses = 3
 				category = naval_doctrine
 			}
-	add_ideas = {SAU_FLOT2}
 	remove_ideas = {SAU_FLOT1}
         }
 }
@@ -804,7 +803,7 @@ focus = {
 	id = SAU_new_dockyard4
 	icon = GFX_focus_generic_cruiser2
 	x = 22 y = 4
-	cost = 5
+	cost = 3
     prerequisite = { focus = SAU_new_dockyard1 }
 	completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -826,7 +825,7 @@ focus = {
 	id = SAU_new_dockyard5
 	icon = GFX_focus_generic_midget_submarines
 	x = 20 y = 4
-	cost = 5
+	cost = 3
     prerequisite = { focus = SAU_new_dockyard2}
 	completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -849,7 +848,7 @@ focus = {
     id = SAU_new_army
     icon = GFX_focus_generic_limited_social_mobilization
 x = 25 y = 1
-cost = 5
+cost = 3
     prerequisite = {focus = SAU_new_politic}
     available_if_capitulated = no
     completion_reward = {
@@ -893,7 +892,7 @@ focus = {
     id = SAU_new_army6
 	icon = GFX_goal_generic_army_doctrines
 x = 29 y = 5
-cost = 5
+cost = 3
 available = {
 }
 prerequisite = {focus = SAU_new_army4}
@@ -911,20 +910,23 @@ focus = {
     id = SAU_new_air
     icon = GFX_goal_generic_air_fighter2
 x = 25 y = 2
-cost = 5
+cost = 3
 available = {}
     prerequisite = {focus = SAU_new_army}
     completion_reward = {
     air_experience = 150
-		add_ideas = {SAU_AIR1}
-	remove_ideas = {SAU_AIR}
+	swap_ideas = {
+    remove_idea = SAU_AIR
+    add_idea = SAU_AIR1
+}
+
 }
 }
 focus = {
     id = SAU_new_air1
     icon = GFX_focus_generic_air_research_boost
 x = 24 y = 3
-cost = 5
+cost = 3
 available = {}
     prerequisite = {focus = SAU_new_air}
     completion_reward = {
@@ -940,7 +942,7 @@ focus = {
     id = SAU_new_air2
     icon = GFX_goal_generic_air_production
 x = 26 y = 3
-cost = 5
+cost = 3
 available = {}
     prerequisite = {focus = SAU_new_air}
     completion_reward = {
@@ -951,7 +953,7 @@ focus = {
     id = SAU_new_air3
     icon = GFX_goal_generic_air_doctrine
 x = 25 y = 5
-cost = 5
+cost = 3
 available = {}
     prerequisite = {focus = SAU_new_air1 focus = SAU_new_air2}
     completion_reward = {
@@ -961,15 +963,15 @@ available = {}
 				uses = 3
 				category = air_doctrine
 			}
-	add_ideas = {SAU_AIR2}
-	remove_ideas = {SAU_AIR1}
-	}
+			remove_ideas = {SAU_FLOT1}
+
+		}
 }
 focus = {
     id = SAU_new_strong
     icon = GFX_goal_generic_military_sphere
 x = 25 y = 6
-cost = 10
+cost = 15
 available = {}
     prerequisite = {focus = SAU_new_dockyard3}
 	   prerequisite = {focus = SAU_new_air3}
