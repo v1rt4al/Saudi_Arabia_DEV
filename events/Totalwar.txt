@@ -130,9 +130,6 @@ country_event = {
 	desc = saudi_arabia.8d
 	picture = GFX_report_event_generic_truck
 	is_triggered_only = yes
-	    trigger = {
-        has_completed_focus = FOCUS_SAU_NEW_POLITIC
-    }
 	option = {
 		name = saudi_arabia8.a
 add_command_power = -999

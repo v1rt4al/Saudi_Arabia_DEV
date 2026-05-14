@@ -9,8 +9,8 @@ focus_tree = {
 	}
 focus = {
 	id = SAU_new_politic
-	icon = GFX_new_SAU
-	x = 12  y = 0
+	icon = GFX_Political
+	x = 25  y = 0
 	cost = 10
 	available = { }
 	completion_reward = {
@@ -532,7 +532,7 @@ cost = 10
 
 focus = {
     id = SAU_total_mobilization_laws
-    icon = GFX_focus_plan_SAU
+    icon = GFX_TOTAL_WAR
     prerequisite = { focus = SAU_new_arms_factory10 }
 	prerequisite = { focus = SAU_new_arms_factory11 }
 	prerequisite = { focus = SAU_new_arms_factory12 }

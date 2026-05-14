@@ -1,0 +1,10 @@
+spriteTypes = {
+        spriteType = {
+        name = "GFX_TOTAL_WAR"
+        texturefile = "gfx\interface\goals\goal_plan_SAU.dds"
+    }
+            spriteType = {
+        name = "GFX_Political"
+        texturefile = "gfx\interface\goals\goal_start_SAU.dds"
+    }
+}
