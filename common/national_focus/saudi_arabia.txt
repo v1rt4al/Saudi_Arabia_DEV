@@ -963,7 +963,7 @@ available = {}
 				uses = 3
 				category = air_doctrine
 			}
-			remove_ideas = {SAU_FLOT1}
+			remove_ideas = {SAU_AIR1}
 
 		}
 }
@@ -971,12 +971,13 @@ focus = {
     id = SAU_new_strong
     icon = GFX_goal_generic_military_sphere
 x = 25 y = 6
-cost = 15
+cost = 10
 available = {}
     prerequisite = {focus = SAU_new_dockyard3}
 	   prerequisite = {focus = SAU_new_air3}
 	      prerequisite = {focus = SAU_new_army6}
     completion_reward = {
+		add_ideas = SAU_STRONG
 	}
 }
 }
