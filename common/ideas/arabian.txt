@@ -9,11 +9,11 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-			stability_factor = 0.025
-			war_support_factor = 0.025
-			production_factory_efficiency_gain_factor = 0.025
-			production_factory_max_efficiency_factor = 0.025
-			production_speed_buildings_factor = 0.025
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			production_speed_buildings_factor = 0.1
 		}
 	}
 	SAU_ENG = {
@@ -25,10 +25,10 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-	production_speed_arms_factory_factor = 0.075
-	production_speed_dockyard_factor = 0.075
-    consumer_goods_factor = 0.05
-	local_resources_factor = 0.1
+	production_speed_arms_factory_factor = 0.025
+	production_speed_dockyard_factor = 0.025
+    consumer_goods_factor = 0.1
+	local_resources_factor = 0.2
 		}
 	}
 		SAU_USA = {
@@ -40,10 +40,10 @@ ideas = {
 			always = yes
 		}
 		modifier = {
-	production_speed_arms_factory_factor = 0.075
-	production_speed_dockyard_factor = 0.075
-    consumer_goods_factor = 0.05
-	local_resources_factor = 0.1
+	production_speed_arms_factory_factor = 0.1
+	production_speed_dockyard_factor = 0.1
+    consumer_goods_factor = 0.2
+	local_resources_factor = 0.3
 		}
 	}
 		SAU_OLI = {

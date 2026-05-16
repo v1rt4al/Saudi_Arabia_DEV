@@ -141,13 +141,11 @@ country_event = {
 	id = saudiarabia.9
 	title = saudi_arabia.9t
 	desc = saudi_arabia.9d
-	picture = GFX_report_event_generic_truck
+	picture = GFX_report_event_PLACEHOLDER
 	is_triggered_only = yes
 	option = {
 		name = saudi_arabia9.a
         set_politics = {
-            ruling_party = communism
-            elections_allowed = no
         }
 		 add_popularity = {
         ideology = communism
@@ -155,21 +153,8 @@ country_event = {
 		 }
 	}
 		option = {
-		name = saudi_arabia9.c
-        set_politics = {
-            ruling_party = fascism
-            elections_allowed = no 
-        }
-		 add_popularity = {
-        ideology = fascism
-        popularity = 0.5
-		 }
-	}
-		option = {
 		name = saudi_arabia9.d
         set_politics = {
-            ruling_party = neutrality
-            elections_allowed = no 
         }
 		 add_popularity = {
         ideology = neutrality

@@ -9,7 +9,7 @@ focus_tree = {
 	}
 focus = {
 	id = SAU_new_politic
-	icon = GFX_Political
+	icon = GFX_focus_YUG_zmaj
 	x = 25  y = 0
 	cost = 10
 	available = { }
@@ -40,6 +40,7 @@ focus = {
 	icon = GFX_focus_chi_british_cooperation
 	x = 42 y = 3
 	cost = 5
+	mutually_exclusive = { focus = SAU_new_factory8}
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory}
@@ -52,7 +53,8 @@ focus = {
 	id = SAU_new_factory8
 	icon = GFX_focus_generic_befriend_usa
 	x =  40 y = 3
-	cost = 5
+	cost = 10
+	mutually_exclusive = { focus = SAU_new_factory1}
 	available = { 
     }
     prerequisite = { focus = SAU_new_factory}
@@ -68,8 +70,7 @@ focus = {
 	cost = 5
 	available = { 
     }
-    prerequisite = { focus = SAU_new_factory8}
-	prerequisite = { focus = SAU_new_factory1}
+    prerequisite = { focus = SAU_new_factory8 focus = SAU_new_factory1}
 	#mutually_exclusive = { focus = SAU_new_dockyard focus = SAU_new_arms_factory}
 	completion_reward = {
     859 = { add_building_construction = {
@@ -103,8 +104,7 @@ focus = {
 	cost = 5
 	available = { 
     }
-    prerequisite = { focus = SAU_new_factory1}
-	prerequisite = { focus = SAU_new_factory8}
+    prerequisite = { focus = SAU_new_factory1 focus = SAU_new_factory8}
 	completion_reward = {
    add_ideas = {
 SAU_OLI
@@ -118,8 +118,7 @@ focus = {
 	cost = 5
 	available = { 
     }
-    prerequisite = { focus = SAU_new_factory1}
-	prerequisite = { focus = SAU_new_factory8}
+    prerequisite = { focus = SAU_new_factory1 focus = SAU_new_factory8}
 	completion_reward = {
     292 = { add_building_construction = {
 	type = industrial_complex
@@ -207,12 +206,12 @@ cost = 10
     prerequisite = { focus = SAU_new_factory7} 
     completion_reward = {  
         859 = {
-            add_extra_state_shared_building_slots = 3
-            add_building_construction = {
+         add_building_construction = {
                 type = arms_factory
                 level = 3
                 instant_build = yes
             }
+			add_extra_state_shared_building_slots = 3
 		}
 }
 }
@@ -237,8 +236,8 @@ cost = 10
 
     available_if_capitulated = no
     completion_reward = {
-       859 ={ add_building_construction = {type = industrial_complex level = 4}}
-	   859 = {add_extra_state_shared_building_slots = 4}
+	   859 = {add_building_construction = {type = industrial_complex level = 4}
+	          add_extra_state_shared_building_slots = 4}
         
     }
 }
